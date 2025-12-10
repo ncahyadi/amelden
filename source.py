@@ -12,7 +12,7 @@ async def amelden(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 if __name__ == '__main__':
-    TOKEN = '8519079354:AAEUNohS_GpCUjlIOn6JHyi02cw-N_F9IJM'
+    TOKEN = ''
 
     app = ApplicationBuilder().token(TOKEN).build()
 
