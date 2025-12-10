@@ -34,6 +34,11 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "Contoh: /amelden aaa"
     )
 
+async def salah(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text(
+        "Siap mohon izin kami pedomani dan laksanakan mohon izin"
+    )
+
 async def amelden(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Ambil argumen setelah command
     if not context.args:
@@ -64,6 +69,7 @@ if __name__ == '__main__':
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("help", help_command))
     app.add_handler(CommandHandler("amelden", amelden))
+    app.add_handler(CommandHandler("salah", salah))
 
     print("Bot berjalan...")
     app.run_polling()
