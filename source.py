@@ -10,7 +10,7 @@ logging.basicConfig(
 # Database sederhana
 USER_DATA = {
     "aaa": (
-        "Letda Laut (E) Abdul Aziz Anaoval. S.Kom "
+        "Abdul Aziz Anaoval. S.Kom "
         "NRP 2225101020028400 PAPK 32B "
         "Alumni Universitas Pelita Bangsa "
         "Jurusan Teknik Informatika asal Bekasi"
@@ -48,7 +48,7 @@ async def amelden(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if kode in USER_DATA:
         biodata = USER_DATA[kode]
         await update.message.reply_text(
-            f"Selamat malam mohon ijin memperkenalkan diri dengan kami {biodata}. "
+            f"Selamat malam mohon ijin memperkenalkan diri dengan kami Letda Laut (E) {biodata}. "
             "Selanjutnya mohon ijin arahan terimakasih mohon ijin."
         )
     else:
